@@ -53,17 +53,17 @@ def plot_graph(graph, shortest_path):
     
 def main():
     estaciones = {
-        "Portal Norte": {"Calle 187": 2, "Héroes": 6},
+        "Portal Norte": {"Calle 187": 2, "Heroes": 6},
         "Calle 187": {"Portal Norte": 2, "Calle 170": 3},
         "Calle 170": {"Calle 187": 3, "Calle 142": 5},
-        "Calle 142": {"Calle 170": 5, "Héroes": 4},
-        "Héroes": {"Portal Norte": 6, "Calle 142": 4, "Calle 100": 3},
-        "Calle 100": {"Héroes": 3, "Calle 72": 5},
-        "Calle 72": {"Calle 100": 5, "Av. Jiménez": 6},
-        "Av. Jiménez": {"Calle 72": 6, "Portal Sur": 8},
-        "Portal Sur": {"Av. Jiménez": 8, "Venecia": 3},
+        "Calle 142": {"Calle 170": 5, "Heroes": 4},
+        "Heroes": {"Portal Norte": 6, "Calle 142": 4, "Calle 100": 3},
+        "Calle 100": {"Heroes": 3, "Calle 72": 5},
+        "Calle 72": {"Calle 100": 5, "Av. Jimenez": 6},
+        "Av. Jimenez": {"Calle 72": 6, "Portal Sur": 8},
+        "Portal Sur": {"Av. Jimenez": 3, "Venecia": 3},
         "Venecia": {"Portal Sur": 3, "Restrepo": 4},
-        "Restrepo": {"Venecia": 4, "Av. Jiménez": 3},
+        "Restrepo": {"Venecia": 4, "Av. Jimenez": 3},
     }
     
     origen = input("Ingrese la estación de inicio: ").strip()
